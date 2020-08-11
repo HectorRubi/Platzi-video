@@ -26,6 +26,7 @@
     }
     .header__menu {
         margin-right: 10px;
+        cursor: pointer;
     }
     .header__menu ul {
         display: none;
@@ -63,6 +64,30 @@
         margin: 0;
         color: white;
     }
+
+    .main {
+        height: 300px;
+        text-align: center;
+    }
+    .main__title {
+        color: white;
+        font-size: 25px;
+    }
+    .input {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid white;
+        border-radius: 25px;
+        color: white;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        padding: 0 20px;
+        width: 70%;
+        outline: none;
+    }
+    .input::placeholder {
+        color: white;
+    }
 </style>
 <body>
     <header class="header">
@@ -83,8 +108,9 @@
         </div>
     </header>
     <main>
-        <section>
-            <h2>Sección principal</h2>
+        <section class="main">
+            <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+            <input class="input" type="text" placeholder="Buscar...">
         </section>
     </main>
     <footer>
