@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #14213d;
+    display: flex;
+    justify-content: space-between;
+}
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+    background: linear-gradient(#14213d, #a8dadc);
+}
+.register__container {
+    min-height: 500px;
+    width: 300px;
+    padding: 40px 60px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.register__container--title {
+    font-weight: 500;
+}
+.register__container--form {
+    display: flex;
+    flex-direction: column;
+}
+.register__container--login {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.register__container--login:hover {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 1em;
+    padding: 0 20px;
+    height: 50px;
+    outline: none;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.input:focus {
+    border-bottom-color: #14213d;
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid transparent;
+    border-radius: 25px;
+    height: 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    outline: none;
+}
+.button:hover {
+    background: transparent;
+    border: 2px solid white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #a8dadc;
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
